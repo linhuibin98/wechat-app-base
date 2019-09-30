@@ -1,4 +1,7 @@
 page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   background-color: #b3d4db;
 }
@@ -6,8 +9,7 @@ page {
 .container {
   display: flex;
   flex-direction: column;
-  margin-left: 250rpx;
-  margin-top: 200rpx;
+  margin-top: -200rpx;
 }
 
 .user-avatar {

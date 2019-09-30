@@ -1,18 +1,10 @@
 <!--pages/posts/posts.wxml-->
+<import src='./post-item/post-item-template' />
 <swiper class='head-swiper' autoplay indicator-dots circular>
   <swiper-item><image src="/images/wx.png"></image></swiper-item>
   <swiper-item><image src="/images/vr.png"></image></swiper-item>
   <swiper-item><image src="/images/iqiyi.png"></image></swiper-item>
 </swiper>
 <block wx:for='{{artData}}' wx:key='{{item.date}}'>
-  <view class="art-container">
-    <view class="avatar-time"><image class="user-avatar" src="{{item.avatar}}"></image><text>{{item.date}}</text></view>
-    <text class="art-title">{{item.title}}</text>
-    <image class="art-img" src="{{item.imgSrc}}"></image>
-    <text class="art-detail">{{item.content}}</text>
-    <view class="coll-read">
-      <view class="coll"><image class="icon" src="/images/icon/chat.png"></image><text>{{item.reading}}</text></view>
-      <view class="read"><image class="icon" src="/images/icon/view.png"></image><text>{{item.collection}}</text></view>
-    </view>
-  </view>
+  <template is='art' data='{{...item}}'></template>
 </block>

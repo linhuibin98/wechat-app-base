@@ -1,7 +1,7 @@
 <view class="container">
-<image class="user-avatar" src="/images/avatar.png"></image>
-<text class="user-name">你好，林</text>
-<view class="btn-container" bindtap="handleTap">
-  <text class="ntn-text">开启小程序之旅</text>
-</view>
+  <image class="user-avatar" src="/images/avatar.png"></image>
+  <text class="user-name">你好，林</text>
+  <view class="btn-container" bindtap="handleTap">
+    <text class="ntn-text">开启小程序之旅</text>
+  </view>
 </view>
